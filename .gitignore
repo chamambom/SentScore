@@ -1,3 +1,6 @@
 .idea/*
 Extract.py
 *.pyc
+__pycache__/*      
+index.py
+testConsumer.py
