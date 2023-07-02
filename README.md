@@ -1,9 +1,10 @@
-#### SentScore / BrandScore
+#### Determining customer satisfaction using sentiment analysis [BrandScore]
 
-BigData project that seeks to build a brand reputation engine using Kafka ,mongo and sentiment analysis. Continuously seek to evaluate 
-Big data architectures (Kappa/Lambda) and the technologies that can be used depending on use case. 
+This is a living document that explains the approach that I took towards my thesis titled Evaluating customer satisfaction using sentiment analysis: A case study for mobile and fixed internet service providers in Zimbabwe 
+
+This thesis is a research paper that I wrote in partial fulfillment of the requirements for an MSc In Big Data Analytics degree. The outcome of the thesis was to build a brand reputation engine using the following tools - Spark, Kafka, MongoDB, Twitter, sentiment analysis. 
  
-Building pipeline to process the real-time data using Spark and Mongodb. Twitter real-time data are pulling using an API and then processing it using Apache-Spark. The “tweepy” API pulls the data from twitter which is stored as JSON Objects. This JSON object contains the tweets, user-details, re-tweets, ip address of the tweets, geo-coordinates etc. But for our processing we are taking into consideration only the actual tweet(tweeted or retweeted by user) and the timestamp when it was created. This data is then staged in MongoDb and some processing is done on the run-time.
+Building a pipeline to process the real-time data using Spark and Mongodb. Twitter real-time data are pulling using an API and then processing it using Apache-Spark. The “tweepy” API pulls the data from twitter which is stored as JSON Objects. This JSON object contains the tweets, user-details, re-tweets, ip address of the tweets, geo-coordinates etc. But for our processing we are taking into consideration only the actual tweet(tweeted or retweeted by user) and the timestamp when it was created. This data is then staged in MongoDb and some processing is done on the run-time.
 
 Data Flow Process: The Twitter dataset is real-time stream data. We can access stream data using twitter API. In order to get tweets from Twitter, authentication is required which can available after creating a Twitter application (in developer mode to get access tokens). Once access token is available Authentication can be done with tweepy API. Now for Building pipeline, First get the data to the StreamListener instance with the help of tweepy package later process the data and send it to the Mongodb. Now the streaming data is continuously flowing to spark streaming instance. The transformation will be performed once the data is available to spark instance later on the data will be available in spark temporary table and this will be used to return top trending hashtags and represents this data on a real-time dashboard.
 
