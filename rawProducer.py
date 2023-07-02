@@ -5,10 +5,10 @@ from kafka import KafkaProducer
 producer = KafkaProducer(bootstrap_servers='20.87.42.17:9092') #Same port as your Kafka server
 
 """API ACCESS KEYS"""
-access_token = "25076010-uCDmucxKYDNaYQ9HDDcS6iWdaZnbv4L5q8Aii72Xe"
-access_token_secret = "CNqLk6hRx9XXOosr989KR9GiTRceMP24sVzi8fRT21UQs"
-consumer_key = "QYpq7ooIqCoDHPD8eUFSRcNiJ"
-consumer_secret = "Z3OesLBi8dn7uRP9b7mDnlRAaLgVoQtez9BnJbFRnzhTVPgOl8"
+access_token = "W"
+access_token_secret = "X"
+consumer_key = "Y"
+consumer_secret = "Z"
 
 topic_name = "twitterdata"
 
