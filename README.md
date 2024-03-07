@@ -24,7 +24,7 @@ Fetching Twitter live streaming data requires the following steps:
 
 ### Processing and Visualization
 
-#### Speed Layer Data (Rohan)
+#### Speed Layer Data
 
 - Stream data from Twitter is in JSON object format, encoded using UTF-8 encoding before sending to Spark. 
 - Spark Streaming context is created with a batch interval of 10 seconds. 
