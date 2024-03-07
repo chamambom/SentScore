@@ -34,7 +34,11 @@ Fetching Twitter live streaming data requires the following steps:
 
 ### Challenges Faced and Solutions
 
-#### Challenges (Rohan)
+#### Challenges 
+
+- Determining the context of the tween when
+    - A native language like Shona or Ndebele is used.
+    - When a tweet is mixed between 1 or more native languages and english.
 - Twitter-Spark connectivity issue: Downgraded Spark version to 2.3.x for compatibility.
 - Spark-MongoDB connectivity issue: Solved by finding and adding compatible jars from Maven repositories.
 
